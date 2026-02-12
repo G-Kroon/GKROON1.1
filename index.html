@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GKROON — Services & Repairs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">GKROON</a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+
+          <li><a href="#cipc">CIPC Services</a></li>
+
+          <li class="has-dropdown">
+            <button class="drop-btn" aria-expanded="false" aria-controls="connectivity-menu">Connectivity ▾</button>
+            <ul id="connectivity-menu" class="dropdown" role="menu" aria-hidden="true">
+              <li><a href="#conn-1">Connectivity 1</a></li>
+              <li><a href="#conn-2">Connectivity 2</a></li>
+              <li><a href="#conn-3">Connectivity 3</a></li>
+              <li><a href="#conn-4">Connectivity 4</a></li>
+              <li><a href="#conn-5">Connectivity 5</a></li>
+              <li><a href="#conn-6">Connectivity 6</a></li>
+              <li><a href="#conn-7">Connectivity 7</a></li>
+              <li><a href="#conn-8">Connectivity 8</a></li>
+              <li><a href="#conn-9">Connectivity 9</a></li>
+              <li><a href="#conn-10">Connectivity 10</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#webdev">Web Design & Development</a></li>
+          <li><a href="#repairs">Smartphone Repairs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>GKROON — Digital Services & Repairs</h1>
+          <p class="lead">Fast, reliable CIPC services, connectivity solutions, web design, and smartphone repairs — built for performance.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#contact">Get a Quote</a>
+            <a class="btn ghost" href="#webdev">Our Work</a>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <article class="card">
+            <h3>CIPC Services</h3>
+            <p>Company registration, annual returns, name reservations and compliance support.</p>
+            <a class="btn card-btn" href="#cipc">Learn more</a>
+          </article>
+
+          <article class="card">
+            <h3>Connectivity</h3>
+            <p>Network setup, troubleshooting, and tailored connectivity packages for businesses.</p>
+            <a class="btn card-btn" href="#connectivity-menu">Explore</a>
+          </article>
+
+          <article class="card">
+            <h3>Smartphone Repairs</h3>
+            <p>Screen replacements, battery swaps, water damage diagnostics and fast turnarounds.</p>
+            <a class="btn card-btn" href="#repairs">Book repair</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About GKROON</h2>
+      <p>GKROON provides professional digital and hardware services with a focus on speed, transparency and value. We combine technical expertise with friendly service.</p>
+    </section>
+
+    <section id="cipc" class="section container">
+      <h2>CIPC Services</h2>
+      <div class="grid-3">
+        <div class="feature">
+          <h4>Company Registration</h4>
+          <p>End-to-end registration and documentation support.</p>
+        </div>
+        <div class="feature">
+          <h4>Annual Returns</h4>
+          <p>Timely filing and compliance reminders.</p>
+        </div>
+        <div class="feature">
+          <h4>Consultation</h4>
+          <p>Advice on structures, tax and compliance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="webdev" class="section container">
+      <h2>Web Design & Development</h2>
+      <p>Responsive websites, e-commerce, and performance optimization. Below are sample product cards to show style and responsiveness.</p>
+
+      <div class="products-grid">
+        <article class="product">
+          <div class="product-media"></div>
+          <h3>Starter Website</h3>
+          <p>Fast, secure, and mobile-first. Perfect for small businesses.</p>
+          <div class="product-actions">
+            <span class="price">R2,499</span>
+            <a class="btn small" href="#contact">Order</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-media"></div>
+          <h3>Business Package</h3>
+          <p>Custom design, CMS, and SEO basics included.</p>
+          <div class="product-actions">
+            <span class="price">R6,999</span>
+            <a class="btn small" href="#contact">Order</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-media"></div>
+          <h3>E‑Commerce</h3>
+          <p>Secure checkout, product management, and analytics.</p>
+          <div class="product-actions">
+            <span class="price">R12,999</span>
+            <a class="btn small" href="#contact">Order</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="repairs" class="section container">
+      <h2>Smartphone Repairs</h2>
+      <p>Diagnostics, parts replacement, and warranty on repairs. We keep turnaround times short and communication clear.</p>
+    </section>
+
+    <section id="contact" class="section container contact-section">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Form submitted (demo)');">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Message</button>
+            <button class="btn ghost" type="reset">Reset</button>
+          </div>
+        </form>
+
+        <aside class="contact-details">
+          <h3>Get in touch</h3>
+          <p><strong>Email:</strong> <a href="mailto:info.gkroon@gmail.com">info.gkroon@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+27661199255">+27 66 1199 255</a></p>
+          <p><strong>WhatsApp Business:</strong> <a href="https://wa.me/27661199255" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+          <p><strong>Facebook:</strong> <a href="#" target="_blank" rel="noopener">Facebook page</a></p>
+          <p><strong>Telegram:</strong> <a href="#" target="_blank" rel="noopener">Telegram</a></p>
+          <p><strong>LinkedIn:</strong> <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="brand-footer">GKROON</p>
+        <p class="small">Email: <a href="mailto:info.gkroon@gmail.com">info.gkroon@gmail.com</a> · Phone: <a href="tel:+27661199255">+27 66 1199 255</a></p>
+      </div>
+
+      <div class="footer-right">
+        <nav class="footer-nav" aria-label="Footer social links">
+          <a class="social social-fb" href="#" aria-label="Facebook" target="_blank" rel="noopener">
+            <!-- Facebook SVG -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.2v-2.9h2.2V9.1c0-2.2 1.3-3.4 3.3-3.4.95 0 1.95.17 1.95.17v2.1h-1.08c-1.07 0-1.4.66-1.4 1.34v1.6h2.38l-.38 2.9h-2v7A10 10 0 0 0 22 12z"/></svg>
+          </a>
+
+          <a class="social social-wa" href="https://wa.me/27661199255" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <!-- WhatsApp SVG -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 .5 11.9 11.9 0 0 0 3.5 3.5 11.9 11.9 0 0 0 .5 12c0 2.1.55 4.1 1.6 5.9L.5 23.5l5.8-1.5A11.9 11.9 0 0 0 12 23.5c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.3-6.2-3.4-8.1zM12 21.5c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.4.9.9-3.3-.2-.4A9.5 9.5 0 1 1 21.5 12 9.5 9.5 0 0 1 12 21.5zM17 14.6c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.9 1.2-.2.3-.4.3-.7.1-1.9-1.1-3.1-2.9-3.5-3.3-.4-.4 0-.6.3-.9.3-.3.4-.5.6-.8.2-.3.1-.6 0-.8-.1-.2- .7-1.7-1-2.3-.3-.6-.6-.5-.8-.5-.2 0-.5 0-.8 0-.3 0-.8.1-1.2.6-.4.5-1.4 1.4-1.4 3.4 0 2 .9 3.9 2 5.3 1.1 1.4 2.6 2.6 4.6 3.3 1.8.6 2.6.6 3.5.5.9-.1 2.8-1.1 3.2-2.2.4-1.1.4-2 .3-2.2-.1-.2-.3-.3-.6-.5z"/></svg>
+          </a>
+
+          <a class="social social-tg" href="#" aria-label="Telegram" target="_blank" rel="noopener">
+            <!-- Telegram SVG -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M21.6 3.4L2.6 10.1c-.9.3-.9 1.1-.2 1.4l4.1 1.3 1.6 5.1c.3.9 1.1.9 1.6.6l2.2-1.6 3.6 2.6c.7.5 1.3.2 1.5-.6l3.2-15.1c.2-.9-.4-1.4-1.4-1.1z"/></svg>
+          </a>
+
+          <a class="social social-ln" href="#" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <!-- LinkedIn SVG -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM3 9h4v12H3zM9 9h3.8v1.6h.1c.5-.9 1.8-1.8 3.7-1.8 4 0 4.7 2.6 4.7 6v7.2H19V16c0-2.1 0-4.8-2.9-4.8-2.9 0-3.3 2.2-3.3 4.6v7.2H9z"/></svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
